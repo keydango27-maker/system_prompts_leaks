@@ -107,8 +107,20 @@
     "OpenAI/monday-gpt.md": 1,
     "OpenAI/Codex/gpt-5.2-codex.md": 1,
     "OpenAI/Codex/gpt-5.1-codex-max.md": 1,
-    "OpenAI/tool-file_search.md": 1
+    "OpenAI/tool-file_search.md": 1,
+    "OpenAI/Codex/plan_mode.md": 1,
+    "Google/ai-studio-build.md": 1,
+    "Anthropic/Official/2024-10-22-claude-haiku-3.5-text-only.md": 1,
+    "Misc/t3-code.md": 1,
+    "Anthropic/Claude Code/bundled-skills/schedule.md": 1,
+    "Anthropic/Claude Code/bundled-skills/verify.md": 1,
+    "OpenAI/Codex/gpt-5.3-codex.md": 1,
+    "Anthropic/anthropic_reminders.md": 1,
+    "Anthropic/Claude Code/bundled-skills/security-review.md": 1,
+    "Anthropic/Official/2025-05-22-claude-opus-4.md": 1,
+    "Anthropic/Official/2025-05-22-claude-sonnet-4.md": 1,
+    "OpenAI/gpt-4.5.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:46:58.663175+00:00"
+  "updated_at": "2026-06-23T03:48:02.497696+00:00"
 }
