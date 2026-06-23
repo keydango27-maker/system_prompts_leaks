@@ -155,8 +155,20 @@
     "OpenAI/Old/chatgpt.com-o4-mini.md": 1,
     "Anthropic/Official/2025-11-24-claude-opus-4.5.md": 1,
     "Mistral/le-chat.md": 1,
-    "Google/jules.md": 1
+    "Google/jules.md": 1,
+    "Microsoft/copilot-macos-app.md": 1,
+    "Anthropic/Claude Code/bundled-skills/run-skill-generator/SKILL.md": 1,
+    "Anthropic/Official/2026-01-18-claude-opus-4.5.md": 1,
+    "README.md": 1,
+    "Anthropic/Official/2025-07-31-claude-opus-4.md": 1,
+    "Anthropic/Official/2025-08-05-claude-opus-4.md": 1,
+    "Anthropic/Official/2025-07-31-claude-sonnet-4.md": 1,
+    "Anthropic/Official/2025-08-05-claude-sonnet-4.md": 1,
+    "Misc/indus-ai.md": 1,
+    "Google/gemini-youtube.md": 1,
+    "Anthropic/claude-for-excel.md": 1,
+    "xAI/grok-4.2.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:51:23.232127+00:00"
+  "updated_at": "2026-06-23T03:52:17.595800+00:00"
 }
