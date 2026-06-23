@@ -47,8 +47,20 @@
     "OpenAI/gpt-4o-advanced-voice-mode.md": 1,
     "Google/gemini-3.5-flash-ai-studio.md": 1,
     "Misc/t3.chat.md": 1,
-    "Google/gemini-2.0-flash-webapp.md": 1
+    "Google/gemini-2.0-flash-webapp.md": 1,
+    "Google/nano-banana-2-api.md": 1,
+    "Google/notebooklm-chat.md": 1,
+    "OpenAI/tool-deep-research.md": 1,
+    "OpenAI/gpt-5-robot-personality.md": 1,
+    "OpenAI/gpt-4o-whatsapp.md": 1,
+    "Anthropic/Claude Code/bundled-skills/simplify.md": 1,
+    "OpenAI/gpt-5.1-cynical.md": 1,
+    "OpenAI/4o-2025-09-03-new-personality.md": 1,
+    "OpenAI/study-and-learn.md": 1,
+    "Google/gemini-3.1-pro-api.md": 1,
+    "OpenAI/Codex/personality_friendly.md": 1,
+    "Anthropic/Claude Code/bundled-skills/run-skill-generator/examples/server.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:42:15.454529+00:00"
+  "updated_at": "2026-06-23T03:43:06.178433+00:00"
 }
