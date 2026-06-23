@@ -95,8 +95,20 @@
     "Anthropic/Claude Code/bundled-skills/compact.md": 1,
     "OpenAI/tool-advanced-memory.md": 1,
     "Misc/gizmo-ai.md": 1,
-    "Anthropic/claude-in-powerpoint.md": 1
+    "Anthropic/claude-in-powerpoint.md": 1,
+    "Google/gemini-diffusion.md": 1,
+    "Qwen/qwen-3.6-plus.md": 1,
+    "OpenAI/Codex/gpt-5-codex.md": 1,
+    "OpenAI/Codex/gpt-5.1-codex.md": 1,
+    "OpenAI/Codex/gpt-5-codex-mini.md": 1,
+    "OpenAI/Codex/gpt-5.1-codex-mini.md": 1,
+    "Anthropic/Claude Code/bundled-skills/fewer-permission-prompts.md": 1,
+    "Anthropic/Claude Code/bundled-skills/loop.md": 1,
+    "OpenAI/monday-gpt.md": 1,
+    "OpenAI/Codex/gpt-5.2-codex.md": 1,
+    "OpenAI/Codex/gpt-5.1-codex-max.md": 1,
+    "OpenAI/tool-file_search.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:46:04.896717+00:00"
+  "updated_at": "2026-06-23T03:46:58.663175+00:00"
 }
