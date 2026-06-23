@@ -203,8 +203,23 @@
     "OpenAI/o3.md": 1,
     "Microsoft/github-copilot.md": 1,
     "Perplexity/perplexity-computer.md": 1,
-    "Anthropic/raw/claude-sonnet-4.6-no-tools-raw.md": 1
+    "Anthropic/raw/claude-sonnet-4.6-no-tools-raw.md": 1,
+    "Misc/docker-gordon-ai.md": 1,
+    "Anthropic/raw/claude-opus-4.6-no-tools-raw.md": 1,
+    "Notion/notion-ai.md": 1,
+    "Anthropic/claude-sonnet-4.6-no-tools.md": 1,
+    "Anthropic/claude-opus-4.6-no-tools.md": 1,
+    "Anthropic/claude-mobile-ios.md": 1,
+    "xAI/grok-build.md": 1,
+    "Misc/amp-code.md": 1,
+    "Anthropic/claude-desktop-code.md": 1,
+    "Meta/meta-ai.md": 1,
+    "Anthropic/Claude Code/claude-code-opus-4.8.md": 1,
+    "OpenAI/gpt-5.2-thinking.md": 1
   },
-  "errors": {},
-  "updated_at": "2026-06-23T03:57:14.192592+00:00"
+  "errors": {
+    "Anthropic/Claude Code/claude-code-opus-4.8.md": "RuntimeError: translation request failed: HTTP 429: <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n<html>\n<head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><meta name=\"viewport\" content=\"initial-scale=1\"><title>https://translate.google.com/translate_a/single</title></head>\n<body style=\"font-family: arial, sans-",
+    "OpenAI/gpt-5.2-thinking.md": "RuntimeError: translation request failed: HTTP 429: <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n<html>\n<head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><meta name=\"viewport\" content=\"initial-scale=1\"><title>https://translate.google.com/translate_a/single</title></head>\n<body style=\"font-family: arial, sans-"
+  },
+  "updated_at": "2026-06-23T05:19:49.901389+00:00"
 }
