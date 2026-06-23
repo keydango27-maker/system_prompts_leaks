@@ -131,8 +131,20 @@
     "xAI/grok-4.md": 1,
     "Anthropic/Official/2024-11-22-claude-sonnet-3.5-text-only.md": 1,
     "Google/gemini-3.5-flash.md": 1,
-    "OpenAI/Codex/codex-auto-review.md": 1
+    "OpenAI/Codex/codex-auto-review.md": 1,
+    "OpenAI/Codex/gpt-5.4.md": 1,
+    "Anthropic/Official/2025-02-24-claude-sonnet-3.7.md": 1,
+    "Anthropic/Official/2024-10-22-claude-sonnet-3.5-text-and-images.md": 1,
+    "Anthropic/Official/2025-10-15-claude-haiku-4.5.md": 1,
+    "Anthropic/Official/2025-09-29-claude-sonnet-4.5.md": 1,
+    "Anthropic/Official/2024-11-22-claude-sonnet-3.5-text-and-images.md": 1,
+    "Misc/warp-2.0-agent.md": 1,
+    "Google/gemini-3-pro.md": 1,
+    "Anthropic/Claude Code/bundled-skills/run-skill-generator/examples/electron.md": 1,
+    "Anthropic/Official/2025-11-19-claude-haiku-4.5.md": 1,
+    "Anthropic/Official/2025-11-19-claude-sonnet-4.5.md": 1,
+    "xAI/grok-4.1-beta.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:49:17.289189+00:00"
+  "updated_at": "2026-06-23T03:50:25.314259+00:00"
 }
