@@ -179,8 +179,20 @@
     "Anthropic/research_instructions.md": 1,
     "xAI/grok-expert.md": 1,
     "Anthropic/Claude Code/bundled-skills/init-new.md": 1,
-    "Google/gemini-workspace.md": 1
+    "Google/gemini-workspace.md": 1,
+    "OpenAI/Codex/gpt-5.md": 1,
+    "OpenAI/chatgpt-gpt-5-agent-mode.md": 1,
+    "OpenAI/Codex/gpt-5.2.md": 1,
+    "Anthropic/Claude Code/bundled-skills/run.md": 1,
+    "Anthropic/Official/2026-05-28-claude-opus-4.8.md": 1,
+    "Misc/fellou-browser.md": 1,
+    "xAI/grok-personas.md": 1,
+    "Anthropic/Official/2026-04-16-claude-opus-4.7.md": 1,
+    "Google/antigravity-cli.md": 1,
+    "OpenAI/Codex/gpt-5.1.md": 1,
+    "Perplexity/comet-browser-assistant.md": 1,
+    "Google/gemini-3.1-pro.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:53:49.015160+00:00"
+  "updated_at": "2026-06-23T03:55:19.431960+00:00"
 }
