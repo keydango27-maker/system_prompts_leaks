@@ -191,8 +191,20 @@
     "Google/antigravity-cli.md": 1,
     "OpenAI/Codex/gpt-5.1.md": 1,
     "Perplexity/comet-browser-assistant.md": 1,
-    "Google/gemini-3.1-pro.md": 1
+    "Google/gemini-3.1-pro.md": 1,
+    "xAI/grok-4.3-beta.md": 1,
+    "Anthropic/claude-for-word.md": 1,
+    "Google/gemini-cli.md": 1,
+    "Misc/zed.md": 1,
+    "OpenAI/o4-mini-high.md": 1,
+    "OpenAI/o4-mini.md": 1,
+    "OpenAI/chatgpt-4.5.md": 1,
+    "OpenAI/gpt-4o.md": 1,
+    "OpenAI/o3.md": 1,
+    "Microsoft/github-copilot.md": 1,
+    "Perplexity/perplexity-computer.md": 1,
+    "Anthropic/raw/claude-sonnet-4.6-no-tools-raw.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:55:19.431960+00:00"
+  "updated_at": "2026-06-23T03:57:14.192592+00:00"
 }
