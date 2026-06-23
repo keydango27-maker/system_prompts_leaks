@@ -167,8 +167,20 @@
     "Misc/indus-ai.md": 1,
     "Google/gemini-youtube.md": 1,
     "Anthropic/claude-for-excel.md": 1,
-    "xAI/grok-4.2.md": 1
+    "xAI/grok-4.2.md": 1,
+    "Misc/hermes.md": 1,
+    "Misc/devin-cli.md": 1,
+    "Cursor/cursor.md": 1,
+    "Anthropic/Claude Code/claude-code-docs-assistant.md": 1,
+    "Anthropic/Official/2025-08-05-claude-opus-4.1.md": 1,
+    "Anthropic/Official/2026-02-05-claude-opus-4.6.md": 1,
+    "Anthropic/Official/2026-02-17-claude-sonnet-4.6.md": 1,
+    "xAI/grok.com-post-new-safety-instructions.md": 1,
+    "Anthropic/research_instructions.md": 1,
+    "xAI/grok-expert.md": 1,
+    "Anthropic/Claude Code/bundled-skills/init-new.md": 1,
+    "Google/gemini-workspace.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:52:17.595800+00:00"
+  "updated_at": "2026-06-23T03:53:49.015160+00:00"
 }
