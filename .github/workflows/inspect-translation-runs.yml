@@ -1,0 +1,43 @@
+name: Inspect translation runs
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-translation-runs.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: translate-all-markdown-zh
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch recent workflow runs
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          curl --fail -sS -L \
+            -H 'Accept: application/vnd.github+json' \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/translate-all-markdown-zh.yml/runs?per_page=20" \
+            > .translation-runs.json
+      - name: Commit diagnostics
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .translation-runs.json
+          git commit -m 'Record translation workflow status' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
