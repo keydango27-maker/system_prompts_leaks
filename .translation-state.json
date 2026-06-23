@@ -143,8 +143,20 @@
     "Anthropic/Claude Code/bundled-skills/run-skill-generator/examples/electron.md": 1,
     "Anthropic/Official/2025-11-19-claude-haiku-4.5.md": 1,
     "Anthropic/Official/2025-11-19-claude-sonnet-4.5.md": 1,
-    "xAI/grok-4.1-beta.md": 1
+    "xAI/grok-4.1-beta.md": 1,
+    "OpenAI/gpt-5.5-instant.md": 1,
+    "Microsoft/copilot-in-microsoft-word.md": 1,
+    "Anthropic/Official/2026-01-18-claude-haiku-4.5.md": 1,
+    "Anthropic/Official/2026-01-18-claude-sonnet-4.5.md": 1,
+    "Google/gemini-2.5-pro-guided-learning.md": 1,
+    "Misc/opencode.md": 1,
+    "Misc/sesame-ai-maya.md": 1,
+    "Google/gemini-3-flash.md": 1,
+    "OpenAI/Old/chatgpt.com-o4-mini.md": 1,
+    "Anthropic/Official/2025-11-24-claude-opus-4.5.md": 1,
+    "Mistral/le-chat.md": 1,
+    "Google/jules.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:50:25.314259+00:00"
+  "updated_at": "2026-06-23T03:51:23.232127+00:00"
 }
