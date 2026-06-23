@@ -23,8 +23,20 @@
     "Misc/raycast-ai.md": 1,
     "OpenAI/gpt-5.1-default.md": 1,
     "OpenAI/gpt-5.1-friendly.md": 1,
-    "OpenAI/gpt-5.1-candid.md": 1
+    "OpenAI/gpt-5.1-candid.md": 1,
+    "Misc/character-ai.md": 1,
+    "OpenAI/tool-web-search.md": 1,
+    "OpenAI/gpt-5.1-quirky.md": 1,
+    "Anthropic/Claude Code/bundled-skills/deep-research/SKILL.md": 1,
+    "Anthropic/Claude Code/bundled-skills/run-skill-generator/examples/cli.md": 1,
+    "Anthropic/Claude Code/bundled-skills/init.md": 1,
+    "OpenAI/image-safety-policies.md": 1,
+    "Anthropic/Claude Code/bundled-skills/debug.md": 1,
+    "OpenAI/Codex/personality_pragmatic_gpt-5.5.md": 1,
+    "Google/gemini-2.5-pro-webapp.md": 1,
+    "OpenAI/Codex/personality_friendly_gpt-5.5.md": 1,
+    "OpenAI/tool-create-image-image_gen.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:40:52.138499+00:00"
+  "updated_at": "2026-06-23T03:41:30.284569+00:00"
 }
