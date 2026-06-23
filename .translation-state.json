@@ -119,8 +119,20 @@
     "Anthropic/Claude Code/bundled-skills/security-review.md": 1,
     "Anthropic/Official/2025-05-22-claude-opus-4.md": 1,
     "Anthropic/Official/2025-05-22-claude-sonnet-4.md": 1,
-    "OpenAI/gpt-4.5.md": 1
+    "OpenAI/gpt-4.5.md": 1,
+    "Microsoft/vscode-copilot-agent.md": 1,
+    "OpenAI/Codex/gpt-5.4-mini.md": 1,
+    "Misc/proton-lumo-ai.md": 1,
+    "Google/gemini-in-chrome.md": 1,
+    "Anthropic/Official/2025-02-24-claude-haiku-3.5-text-and-images.md": 1,
+    "OpenAI/Codex/gpt-5.3-codex-spark.md": 1,
+    "Anthropic/Claude Code/bundled-skills/keybindings-help.md": 1,
+    "Anthropic/Official/2024-10-22-claude-sonnet-3.5-text-only.md": 1,
+    "xAI/grok-4.md": 1,
+    "Anthropic/Official/2024-11-22-claude-sonnet-3.5-text-only.md": 1,
+    "Google/gemini-3.5-flash.md": 1,
+    "OpenAI/Codex/codex-auto-review.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:48:02.497696+00:00"
+  "updated_at": "2026-06-23T03:49:17.289189+00:00"
 }
