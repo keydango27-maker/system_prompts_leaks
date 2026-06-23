@@ -83,8 +83,20 @@
     "OpenAI/gpt-4.1-mini.md": 1,
     "Anthropic/Official/2024-09-09-claude-sonnet-3.5-text-only.md": 1,
     "Google/gemini-2.5-flash-image-preview.md": 1,
-    "Anthropic/Claude Code/bundled-skills/batch.md": 1
+    "Anthropic/Claude Code/bundled-skills/batch.md": 1,
+    "Misc/minimax-m2.5.md": 1,
+    "Misc/kagi-assistant.md": 1,
+    "Anthropic/Claude Code/bundled-skills/code-review.md": 1,
+    "Anthropic/default-styles.md": 1,
+    "Anthropic/Claude Code/grep-tool.md": 1,
+    "OpenAI/gpt-4o-legacy-voice-mode.md": 1,
+    "Anthropic/Official/2024-07-12-claude-sonnet-3.5-text-and-images.md": 1,
+    "Anthropic/Official/2024-09-09-claude-sonnet-3.5-text-and-images.md": 1,
+    "Anthropic/Claude Code/bundled-skills/compact.md": 1,
+    "OpenAI/tool-advanced-memory.md": 1,
+    "Misc/gizmo-ai.md": 1,
+    "Anthropic/claude-in-powerpoint.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T03:45:08.743701+00:00"
+  "updated_at": "2026-06-23T03:46:04.896717+00:00"
 }
