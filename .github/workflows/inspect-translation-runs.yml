@@ -10,10 +10,6 @@ permissions:
   actions: read
   contents: write
 
-concurrency:
-  group: translate-all-markdown-zh
-  cancel-in-progress: false
-
 jobs:
   inspect:
     runs-on: ubuntu-latest
@@ -41,3 +37,5 @@ jobs:
           git commit -m 'Record translation workflow status' || exit 0
           git pull --rebase origin main
           git push origin HEAD:main
+
+# Diagnostic refresh: 2026-06-24
