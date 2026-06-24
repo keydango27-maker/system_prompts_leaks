@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/translate-all-markdown-zh.yml'
       - '.github/scripts/translate_all_markdown.py'
+      - '.github/scripts/translate_all_markdown_fast.py'
   workflow_dispatch:
 
 permissions:
@@ -18,11 +19,12 @@ concurrency:
 jobs:
   translate:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 120
     env:
-      MAX_FILES_PER_RUN: '12'
-      TRANSLATE_WORKERS: '3'
-      MAX_FILE_ATTEMPTS: '3'
+      MAX_FILES_PER_RUN: '1'
+      TRANSLATE_WORKERS: '10'
+      MAX_FILE_ATTEMPTS: '5'
+      REQUEST_INTERVAL: '0.05'
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -34,8 +36,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Translate next batch and commit each file
-        run: python .github/scripts/translate_all_markdown.py
+      - name: Translate one remaining document with fast profile
+        run: python .github/scripts/translate_all_markdown_fast.py
 
       - name: Count remaining files
         id: remaining
