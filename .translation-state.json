@@ -225,8 +225,9 @@
     "Anthropic/Claude Code/deferred-tools.md": 1,
     "Anthropic/Claude Code/claude-code-opus-4.6.md": 1,
     "Anthropic/Claude Code/claude-code-2.1.172-opus-4.8.md": 1,
-    "Anthropic/old/claude-opus-4.5.md": 1
+    "Anthropic/old/claude-opus-4.5.md": 1,
+    "Anthropic/old/claude-3.7-sonnet-full-system-message-humanreadable.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-23T05:22:25.819543+00:00"
+  "updated_at": "2026-06-29T01:40:02.956382+00:00"
 }
