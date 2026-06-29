@@ -75,4 +75,4 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
-# Diagnostic refresh: pending list and latest job tail.
+# Diagnostic refresh: 2026-06-29 completion check.
