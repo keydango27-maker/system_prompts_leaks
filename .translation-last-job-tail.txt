@@ -1,0 +1,185 @@
+﻿2026-06-24T01:15:39.9145565Z Current runner version: '2.335.1'
+2026-06-24T01:15:39.9169946Z ##[group]Runner Image Provisioner
+2026-06-24T01:15:39.9170761Z Hosted Compute Agent
+2026-06-24T01:15:39.9171357Z Version: 20260611.554
+2026-06-24T01:15:39.9171949Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-06-24T01:15:39.9173043Z Build Date: 2026-06-11T21:40:46Z
+2026-06-24T01:15:39.9173729Z Worker ID: {ec463f72-0d7b-4410-8132-d43c3159a942}
+2026-06-24T01:15:39.9174404Z Azure Region: westus3
+2026-06-24T01:15:39.9174976Z ##[endgroup]
+2026-06-24T01:15:39.9176493Z ##[group]Operating System
+2026-06-24T01:15:39.9177095Z Ubuntu
+2026-06-24T01:15:39.9177620Z 24.04.4
+2026-06-24T01:15:39.9178097Z LTS
+2026-06-24T01:15:39.9178563Z ##[endgroup]
+2026-06-24T01:15:39.9179106Z ##[group]Runner Image
+2026-06-24T01:15:39.9179689Z Image: ubuntu-24.04
+2026-06-24T01:15:39.9180215Z Version: 20260615.205.1
+2026-06-24T01:15:39.9181371Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260615.205/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-24T01:15:39.9183284Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260615.205
+2026-06-24T01:15:39.9184200Z ##[endgroup]
+2026-06-24T01:15:39.9185287Z ##[group]GITHUB_TOKEN Permissions
+2026-06-24T01:15:39.9187444Z Actions: write
+2026-06-24T01:15:39.9188038Z Contents: write
+2026-06-24T01:15:39.9188561Z Metadata: read
+2026-06-24T01:15:39.9189051Z ##[endgroup]
+2026-06-24T01:15:39.9191070Z Secret source: Actions
+2026-06-24T01:15:39.9191744Z Prepare workflow directory
+2026-06-24T01:15:39.9573171Z Prepare all required actions
+2026-06-24T01:15:39.9611840Z Getting action download info
+2026-06-24T01:15:40.2992900Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-24T01:15:40.3926226Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-06-24T01:15:40.5425205Z Complete job name: translate
+2026-06-24T01:15:40.6073417Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-06-24T01:15:40.6081972Z ##[group]Run actions/checkout@v4
+2026-06-24T01:15:40.6082976Z with:
+2026-06-24T01:15:40.6083450Z   fetch-depth: 0
+2026-06-24T01:15:40.6084089Z   repository: keydango27-maker/system_prompts_leaks
+2026-06-24T01:15:40.6088659Z   token: ***
+2026-06-24T01:15:40.6089155Z   ssh-strict: true
+2026-06-24T01:15:40.6089643Z   ssh-user: git
+2026-06-24T01:15:40.6090108Z   persist-credentials: true
+2026-06-24T01:15:40.6090683Z   clean: true
+2026-06-24T01:15:40.6091167Z   sparse-checkout-cone-mode: true
+2026-06-24T01:15:40.6091728Z   fetch-tags: false
+2026-06-24T01:15:40.6092224Z   show-progress: true
+2026-06-24T01:15:40.6092842Z   lfs: false
+2026-06-24T01:15:40.6093436Z   submodules: false
+2026-06-24T01:15:40.6093926Z   set-safe-directory: true
+2026-06-24T01:15:40.6094748Z env:
+2026-06-24T01:15:40.6095204Z   MAX_FILES_PER_RUN: 1
+2026-06-24T01:15:40.6095686Z   TRANSLATE_WORKERS: 10
+2026-06-24T01:15:40.6096255Z   MAX_FILE_ATTEMPTS: 5
+2026-06-24T01:15:40.6096742Z   REQUEST_INTERVAL: 0.05
+2026-06-24T01:15:40.6097235Z ##[endgroup]
+2026-06-24T01:15:40.7173793Z Syncing repository: keydango27-maker/system_prompts_leaks
+2026-06-24T01:15:40.7176541Z ##[group]Getting Git version info
+2026-06-24T01:15:40.7177865Z Working directory is '/home/runner/work/system_prompts_leaks/system_prompts_leaks'
+2026-06-24T01:15:40.7179603Z [command]/usr/bin/git version
+2026-06-24T01:15:40.7180493Z git version 2.54.0
+2026-06-24T01:15:40.7183348Z ##[endgroup]
+2026-06-24T01:15:40.7189833Z Temporarily overriding HOME='/home/runner/work/_temp/877ee80d-8533-4472-9936-648c325bec12' before making global git config changes
+2026-06-24T01:15:40.7192133Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-24T01:15:40.7194349Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/system_prompts_leaks/system_prompts_leaks
+2026-06-24T01:15:40.7197826Z Deleting the contents of '/home/runner/work/system_prompts_leaks/system_prompts_leaks'
+2026-06-24T01:15:40.7199919Z ##[group]Initializing the repository
+2026-06-24T01:15:40.7201259Z [command]/usr/bin/git init /home/runner/work/system_prompts_leaks/system_prompts_leaks
+2026-06-24T01:15:40.7281402Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-24T01:15:40.7282876Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-24T01:15:40.7284310Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-24T01:15:40.7285543Z hint: call:
+2026-06-24T01:15:40.7286193Z hint:
+2026-06-24T01:15:40.7286999Z hint: 	git config --global init.defaultBranch <name>
+2026-06-24T01:15:40.7287955Z hint:
+2026-06-24T01:15:40.7288973Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-24T01:15:40.7290561Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-24T01:15:40.7291788Z hint:
+2026-06-24T01:15:40.7292651Z hint: 	git branch -m <name>
+2026-06-24T01:15:40.7293436Z hint:
+2026-06-24T01:15:40.7294439Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-24T01:15:40.7296647Z Initialized empty Git repository in /home/runner/work/system_prompts_leaks/system_prompts_leaks/.git/
+2026-06-24T01:15:40.7300340Z [command]/usr/bin/git remote add origin https://github.com/keydango27-maker/system_prompts_leaks
+2026-06-24T01:15:40.7330494Z ##[endgroup]
+2026-06-24T01:15:40.7332198Z ##[group]Disabling automatic garbage collection
+2026-06-24T01:15:40.7333989Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-24T01:15:40.7358039Z ##[endgroup]
+2026-06-24T01:15:40.7358986Z ##[group]Setting up auth
+2026-06-24T01:15:40.7363733Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-24T01:15:40.7391631Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-24T01:15:40.7653938Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-24T01:15:40.7679554Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-24T01:15:40.7846511Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-24T01:15:40.7870773Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-24T01:15:40.8039470Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-24T01:15:40.8066380Z ##[endgroup]
+2026-06-24T01:15:40.8067634Z ##[group]Fetching the repository
+2026-06-24T01:15:40.8074648Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-06-24T01:15:42.2182832Z From https://github.com/keydango27-maker/system_prompts_leaks
+2026-06-24T01:15:42.2185414Z  * [new branch]      main       -> origin/main
+2026-06-24T01:15:42.2220307Z [command]/usr/bin/git branch --list --remote origin/main
+2026-06-24T01:15:42.2241433Z   origin/main
+2026-06-24T01:15:42.2253867Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-06-24T01:15:42.2275789Z 3879c32cd9d8b2ce4f7a4179c255f5cb5db4c122
+2026-06-24T01:15:42.2311381Z ##[endgroup]
+2026-06-24T01:15:42.2314127Z ##[group]Determining the checkout info
+2026-06-24T01:15:42.2316937Z ##[endgroup]
+2026-06-24T01:15:42.2318849Z [command]/usr/bin/git sparse-checkout disable
+2026-06-24T01:15:42.2352868Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-24T01:15:42.2386414Z ##[group]Checking out the ref
+2026-06-24T01:15:42.2388964Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-24T01:15:42.3027851Z Switched to a new branch 'main'
+2026-06-24T01:15:42.3029943Z branch 'main' set up to track 'origin/main'.
+2026-06-24T01:15:42.3036267Z ##[endgroup]
+2026-06-24T01:15:42.3077864Z [command]/usr/bin/git log -1 --format=%H
+2026-06-24T01:15:42.3098142Z 3879c32cd9d8b2ce4f7a4179c255f5cb5db4c122
+2026-06-24T01:15:42.3436637Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-06-24T01:15:42.3442742Z ##[group]Run actions/setup-python@v5
+2026-06-24T01:15:42.3443934Z with:
+2026-06-24T01:15:42.3444822Z   python-version: 3.12
+2026-06-24T01:15:42.3445827Z   check-latest: false
+2026-06-24T01:15:42.3457269Z   token: ***
+2026-06-24T01:15:42.3458219Z   update-environment: true
+2026-06-24T01:15:42.3459316Z   allow-prereleases: false
+2026-06-24T01:15:42.3460371Z   freethreaded: false
+2026-06-24T01:15:42.3461313Z env:
+2026-06-24T01:15:42.3462149Z   MAX_FILES_PER_RUN: 1
+2026-06-24T01:15:42.3463226Z   TRANSLATE_WORKERS: 10
+2026-06-24T01:15:42.3464245Z   MAX_FILE_ATTEMPTS: 5
+2026-06-24T01:15:42.3465221Z   REQUEST_INTERVAL: 0.05
+2026-06-24T01:15:42.3466262Z ##[endgroup]
+2026-06-24T01:15:42.4768769Z ##[group]Installed versions
+2026-06-24T01:15:42.4853927Z (node:2305) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-06-24T01:15:42.4858479Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-06-24T01:15:42.4861202Z Successfully set up CPython (3.12.13)
+2026-06-24T01:15:42.4864510Z ##[endgroup]
+2026-06-24T01:15:42.5009495Z ##[group]Run python .github/scripts/translate_all_markdown_fast.py
+2026-06-24T01:15:42.5011432Z [36;1mpython .github/scripts/translate_all_markdown_fast.py[0m
+2026-06-24T01:15:42.5144414Z shell: /usr/bin/bash -e {0}
+2026-06-24T01:15:42.5145522Z env:
+2026-06-24T01:15:42.5146356Z   MAX_FILES_PER_RUN: 1
+2026-06-24T01:15:42.5147318Z   TRANSLATE_WORKERS: 10
+2026-06-24T01:15:42.5148283Z   MAX_FILE_ATTEMPTS: 5
+2026-06-24T01:15:42.5149248Z   REQUEST_INTERVAL: 0.05
+2026-06-24T01:15:42.5150512Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-06-24T01:15:42.5152253Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-06-24T01:15:42.5154188Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-06-24T01:15:42.5155753Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-06-24T01:15:42.5157322Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-06-24T01:15:42.5158978Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-06-24T01:15:42.5160350Z ##[endgroup]
+2026-06-24T01:15:42.6547186Z Traceback (most recent call last):
+2026-06-24T01:15:42.6557263Z   File "/home/runner/work/system_prompts_leaks/system_prompts_leaks/.github/scripts/translate_all_markdown_fast.py", line 17, in <module>
+2026-06-24T01:15:42.6559852Z     spec.loader.exec_module(translator)
+2026-06-24T01:15:42.6561558Z   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2026-06-24T01:15:42.6563860Z   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2026-06-24T01:15:42.6566619Z   File "/home/runner/work/system_prompts_leaks/system_prompts_leaks/.github/scripts/translate_all_markdown.py", line 65, in <module>
+2026-06-24T01:15:42.6568971Z     @dataclass(frozen=True)
+2026-06-24T01:15:42.6569967Z      ^^^^^^^^^^^^^^^^^^^^^^
+2026-06-24T01:15:42.6571652Z   File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/dataclasses.py", line 1265, in wrap
+2026-06-24T01:15:42.6669991Z     return _process_class(cls, init, repr, eq, order, unsafe_hash,
+2026-06-24T01:15:42.6672856Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-24T01:15:42.6678144Z   File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/dataclasses.py", line 983, in _process_class
+2026-06-24T01:15:42.6682012Z     and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+2026-06-24T01:15:42.6684342Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-24T01:15:42.6687247Z   File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/dataclasses.py", line 749, in _is_type
+2026-06-24T01:15:42.6690237Z     ns = sys.modules.get(cls.__module__).__dict__
+2026-06-24T01:15:42.6692098Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-24T01:15:42.6695051Z AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+2026-06-24T01:15:42.6807655Z ##[error]Process completed with exit code 1.
+2026-06-24T01:15:42.7118591Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-06-24T01:15:42.7123028Z Post job cleanup.
+2026-06-24T01:15:42.7931323Z [command]/usr/bin/git version
+2026-06-24T01:15:42.7962799Z git version 2.54.0
+2026-06-24T01:15:42.7996583Z Temporarily overriding HOME='/home/runner/work/_temp/8a626b7c-3bcb-408b-8564-53fa10143d81' before making global git config changes
+2026-06-24T01:15:42.8000395Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-24T01:15:42.8003723Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/system_prompts_leaks/system_prompts_leaks
+2026-06-24T01:15:42.8032106Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-24T01:15:42.8059732Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-24T01:15:42.8237047Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-24T01:15:42.8258446Z http.https://github.com/.extraheader
+2026-06-24T01:15:42.8267851Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-06-24T01:15:42.8293578Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-24T01:15:42.8462979Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-24T01:15:42.8488731Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-24T01:15:42.8784792Z Cleaning up orphan processes
+2026-06-24T01:15:42.9145922Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
