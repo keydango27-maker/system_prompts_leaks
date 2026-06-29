@@ -237,8 +237,9 @@
     "Anthropic/claude-opus-4.8.md": 1,
     "Anthropic/claude-fable-5.md": 1,
     "Anthropic/raw/claude-opus-4.6-raw.md": 1,
-    "Anthropic/raw/claude-sonnet-4.6-raw.md": 1
+    "Anthropic/raw/claude-sonnet-4.6-raw.md": 1,
+    "Anthropic/claude-cowork.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-29T01:47:26.808322+00:00"
+  "updated_at": "2026-06-29T01:47:52.664512+00:00"
 }
