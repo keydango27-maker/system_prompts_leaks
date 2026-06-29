@@ -230,8 +230,9 @@
     "OpenAI/gpt-5.5-thinking.md": 1,
     "Anthropic/Claude Code/claude-code-2.1.172-opus-4.6.md": 1,
     "Anthropic/old/claude-4.5-sonnet.md": 1,
-    "Anthropic/Claude Code/bundled-skills/update-config.md": 1
+    "Anthropic/Claude Code/bundled-skills/update-config.md": 1,
+    "Anthropic/claude-sonnet-4.6.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-29T01:42:10.553718+00:00"
+  "updated_at": "2026-06-29T01:42:42.567593+00:00"
 }
