@@ -81,3 +81,5 @@ translator.request_translation = request_translation_fast
 if __name__ == '__main__':
     remaining = translator.run_batch()
     print(f'Fast-profile run complete; remaining eligible files: {remaining}', flush=True)
+
+# Trigger refresh after loader fix.
