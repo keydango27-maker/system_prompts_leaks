@@ -240,8 +240,9 @@
     "Anthropic/raw/claude-sonnet-4.6-raw.md": 1,
     "Anthropic/claude-cowork.md": 1,
     "Anthropic/claude-design.md": 1,
-    "OpenAI/Codex/# SYSTEM INSTRUCTIONS.md": 1
+    "OpenAI/Codex/# SYSTEM INSTRUCTIONS.md": 1,
+    "OpenAI/Codex/gpt-5.5.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-29T01:49:16.012219+00:00"
+  "updated_at": "2026-06-29T01:50:07.405599+00:00"
 }
