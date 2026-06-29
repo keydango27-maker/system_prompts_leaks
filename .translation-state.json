@@ -243,8 +243,9 @@
     "OpenAI/Codex/# SYSTEM INSTRUCTIONS.md": 1,
     "OpenAI/Codex/gpt-5.5.md": 1,
     "OpenAI/Codex/SYSTEM INSTRUCTIONS.md": 1,
-    "Anthropic/Official/all.md": 1
+    "Anthropic/Official/all.md": 1,
+    "Anthropic/Claude Code/bundled-skills/claude-api.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-29T01:51:22.379222+00:00"
+  "updated_at": "2026-06-29T01:52:40.195916+00:00"
 }
