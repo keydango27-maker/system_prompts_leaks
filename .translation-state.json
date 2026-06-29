@@ -242,8 +242,9 @@
     "Anthropic/claude-design.md": 1,
     "OpenAI/Codex/# SYSTEM INSTRUCTIONS.md": 1,
     "OpenAI/Codex/gpt-5.5.md": 1,
-    "OpenAI/Codex/SYSTEM INSTRUCTIONS.md": 1
+    "OpenAI/Codex/SYSTEM INSTRUCTIONS.md": 1,
+    "Anthropic/Official/all.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-29T01:50:49.447839+00:00"
+  "updated_at": "2026-06-29T01:51:22.379222+00:00"
 }
