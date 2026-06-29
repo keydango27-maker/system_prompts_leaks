@@ -122,4 +122,4 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
-# Independent diagnostic scanner; does not import the translation module.
+# Independent diagnostic scanner; refresh after fast-loader fix.
