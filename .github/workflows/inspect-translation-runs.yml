@@ -15,27 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build pending-file report
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY' > .translation-pending.txt
-          import importlib.util
-          spec = importlib.util.spec_from_file_location('translator', '.github/scripts/translate_all_markdown.py')
-          module = importlib.util.module_from_spec(spec)
-          spec.loader.exec_module(module)
-          state = module.load_state()
-          pending, blocked = module.pending_sources(state)
-          print(f'pending={len(pending)} blocked={len(blocked)}')
-          for path in pending:
-              attempts = state.get('attempts', {}).get(path.as_posix(), 0)
-              print(f'{path.stat().st_size}\t{attempts}\t{path.as_posix()}')
-          if blocked:
-              print('\nBLOCKED')
-              for path in blocked:
-                  print(path.as_posix())
-          PY
-      - name: Fetch latest translation run and job log tail
+
+      - name: Fetch latest translation run and log tail
         shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -63,7 +44,73 @@ jobs:
             exit 0
           fi
           curl --fail -sS -L "${headers[@]}" \
-            "$api/actions/jobs/$job_id/logs" | tail -n 250 > .translation-last-job-tail.txt
+            "$api/actions/jobs/$job_id/logs" | tail -n 300 > .translation-last-job-tail.txt
+
+      - name: Build independent pending-file report
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY' > .translation-pending.txt
+          from pathlib import Path
+          import hashlib, json, re
+
+          excluded = {'.git', '.github', 'node_modules', 'vendor', 'dist', 'build', '.venv', 'venv'}
+          translated_suffixes = ('.zh-CN.md', '.zh_CN.md', '.zh.md', '-zh-CN.md', '-zh.md', '_zh-CN.md', '_zh.md')
+          fence = re.compile(r'(```[^\n]*\n.*?```|~~~[^\n]*\n.*?~~~)', re.S)
+          protected = re.compile(r'(`[^`\n]+`|https?://[^\s)>\]}]+|<[^>\n]+>)')
+          source_sha_re = re.compile(r'<!-- source-sha256: ([0-9a-f]{64}) -->')
+
+          try:
+              state = json.loads(Path('.translation-state.json').read_text(encoding='utf-8'))
+          except Exception:
+              state = {'attempts': {}, 'errors': {}}
+
+          def is_translation(path):
+              return any(path.name.endswith(s) for s in translated_suffixes)
+
+          def looks_english(text):
+              visible = protected.sub(' ', fence.sub(' ', text))
+              latin = len(re.findall(r'[A-Za-z]', visible))
+              han = len(re.findall(r'[\u4e00-\u9fff]', visible))
+              return latin >= 40 and latin > max(20, int(han * 1.5))
+
+          def target_for(path):
+              return path.with_name(path.stem + '.zh-CN.md')
+
+          def current(source, target):
+              if not target.exists():
+                  return False
+              try:
+                  head = target.read_text(encoding='utf-8')[:1200]
+                  match = source_sha_re.search(head)
+                  digest = hashlib.sha256(source.read_bytes()).hexdigest()
+                  return bool(match and match.group(1) == digest)
+              except Exception:
+                  return False
+
+          sources = []
+          for path in Path('.').rglob('*.md'):
+              if any(part in excluded for part in path.parts):
+                  continue
+              if path.name == 'TRANSLATION_STATUS.md' or is_translation(path):
+                  continue
+              try:
+                  text = path.read_text(encoding='utf-8')
+              except Exception:
+                  continue
+              if looks_english(text):
+                  sources.append(path)
+
+          pending = [p for p in sources if not current(p, target_for(p))]
+          pending.sort(key=lambda p: (p.stat().st_size, p.as_posix().lower()))
+          completed = len(sources) - len(pending)
+          print(f'sources={len(sources)} completed={completed} pending={len(pending)}')
+          for path in pending:
+              attempts = state.get('attempts', {}).get(path.as_posix(), 0)
+              error = state.get('errors', {}).get(path.as_posix(), '')
+              print(f'{path.stat().st_size}\t{attempts}\t{path.as_posix()}\t{error}')
+          PY
+
       - name: Commit diagnostics
         shell: bash
         run: |
@@ -75,4 +122,4 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
-# Diagnostic refresh: 2026-06-29 completion check.
+# Independent diagnostic scanner; does not import the translation module.
