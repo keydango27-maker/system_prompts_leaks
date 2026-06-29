@@ -232,8 +232,9 @@
     "Anthropic/old/claude-4.5-sonnet.md": 1,
     "Anthropic/Claude Code/bundled-skills/update-config.md": 1,
     "Anthropic/claude-sonnet-4.6.md": 1,
-    "Anthropic/claude-opus-4.6.md": 1
+    "Anthropic/claude-opus-4.6.md": 1,
+    "Anthropic/claude-opus-4.7.md": 1
   },
   "errors": {},
-  "updated_at": "2026-06-29T01:43:12.671599+00:00"
+  "updated_at": "2026-06-29T01:43:41.625416+00:00"
 }
